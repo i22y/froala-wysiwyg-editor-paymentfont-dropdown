@@ -1,0 +1,380 @@
+{
+    "fonts": [
+        {
+            "name": "Amazon",
+            "contents": "pf-amazon"
+        },
+        {
+            "name": "American Express",
+            "contents": "pf-american-express"
+        },
+        {
+            "name": "American Express Alt",
+            "contents": "pf-american-express-alt"
+        },
+        {
+            "name": "Apple Pay",
+            "contents": "pf-apple-pay"
+        },
+        {
+            "name": "ATM",
+            "contents": "pf-atm"
+        },
+        {
+            "name": "Bancontact Mister Cash",
+            "contents": "pf-bancontact-mister-cash"
+        },
+        {
+            "name": "Bank Transfer",
+            "contents": "pf-bank-transfer"
+        },
+        {
+            "name": "Bankomat",
+            "contents": "pf-bankomat"
+        },
+        {
+            "name": "Bitcoin",
+            "contents": "pf-bitcoin"
+        },
+        {
+            "name": "Bitcoin Sign",
+            "contents": "pf-bitcoin-sign"
+        },
+        {
+            "name": "Braintree",
+            "contents": "pf-braintree"
+        },
+        {
+            "name": "BTC",
+            "contents": "pf-btc"
+        },
+        {
+            "name": "Card",
+            "contents": "pf-card"
+        },
+        {
+            "name": "Carta Si",
+            "contents": "pf-carta-si"
+        },
+        {
+            "name": "Cash",
+            "contents": "pf-cash"
+        },
+        {
+            "name": "Cash On Delivery",
+            "contents": "pf-cash-on-delivery"
+        },
+        {
+            "name": "Cash On Pickup",
+            "contents": "pf-cash-on-pickup"
+        },
+        {
+            "name": "CB",
+            "contents": "pf-cb"
+        },
+        {
+            "name": "Cirrus",
+            "contents": "pf-cirrus"
+        },
+        {
+            "name": "Cirrus Alt",
+            "contents": "pf-cirrus-alt"
+        },
+        {
+            "name": "ClickAndBuy",
+            "contents": "pf-clickandbuy"
+        },
+        {
+            "name": "Credit Card",
+            "contents": "pf-credit-card"
+        },
+        {
+            "name": "Dankort",
+            "contents": "pf-dankort"
+        },
+        {
+            "name": "Diners Club",
+            "contents": "pf-diners"
+        },
+        {
+            "name": "Discover",
+            "contents": "pf-discover"
+        },
+        {
+            "name": "EC",
+            "contents": "pf-ec"
+        },
+        {
+            "name": "ELO",
+            "contents": "pf-elo"
+        },
+        {
+            "name": "ELO Alt",
+            "contents": "pf-elo-alt"
+        },
+        {
+            "name": "EPS",
+            "contents": "pf-eps"
+        },
+        {
+            "name": "EUR",
+            "contents": "pf-eur"
+        },
+        {
+            "name": "Facture",
+            "contents": "pf-facture"
+        },
+        {
+            "name": "Fattura",
+            "contents": "pf-fattura"
+        },
+        {
+            "name": "Flattr",
+            "contents": "pf-flattr"
+        },
+        {
+            "name": "GiroPay",
+            "contents": "pf-giropay"
+        },
+        {
+            "name": "Google Wallet",
+            "contents": "pf-google-wallet"
+        },
+        {
+            "name": "Google Wallet Alt",
+            "contents": "pf-google-wallet-alt"
+        },
+        {
+            "name": "GPB",
+            "contents": "pf-gpb"
+        },
+        {
+            "name": "GratiPay",
+            "contents": "pf-gratipay"
+        },
+        {
+            "name": "GratiPay Alt",
+            "contents": "pf-gratipay-sign"
+        },
+        {
+            "name": "Ideal",
+            "contents": "pf-ideal"
+        },
+        {
+            "name": "ILS",
+            "contents": "pf-ils"
+        },
+        {
+            "name": "INR",
+            "contents": "pf-inr"
+        },
+        {
+            "name": "Interac",
+            "contents": "pf-interac"
+        },
+        {
+            "name": "Invoice",
+            "contents": "pf-invoice"
+        },
+        {
+            "name": "Invoice Sign",
+            "contents": "pf-invoice-sign"
+        },
+        {
+            "name": "Invoice Sign Alt",
+            "contents": "pf-invoice-sign-alt"
+        },
+        {
+            "name": "Invoice Sign Alt O",
+            "contents": "pf-invoice-sign-alt-o"
+        },
+        {
+            "name": "Invoice Sign O",
+            "contents": "pf-invoice-sign-o"
+        },
+        {
+            "name": "JCB",
+            "contents": "pf-jcb"
+        },
+        {
+            "name": "JPY",
+            "contents": "pf-jpy"
+        },
+        {
+            "name": "KRW",
+            "contents": "pf-krw"
+        },
+        {
+            "name": "Maestro",
+            "contents": "pf-maestro"
+        },
+        {
+            "name": "Maestro Alt",
+            "contents": "pf-maestro-alt"
+        },
+        {
+            "name": "Mastercard",
+            "contents": "pf-mastercard"
+        },
+        {
+            "name": "Mastercard Alt",
+            "contents": "pf-mastercard-alt"
+        },
+        {
+            "name": "Mastercard SecureCode",
+            "contents": "pf-mastercard-securecode"
+        },
+        {
+            "name": "MercadoPago",
+            "contents": "pf-mercado-pago"
+        },
+        {
+            "name": "MercadoPago Alt",
+            "contents": "pf-mercado-pago-sign"
+        },
+        {
+            "name": "MOIP",
+            "contents": "pf-moip"
+        },
+        {
+            "name": "MultiBanco",
+            "contents": "pf-multibanco"
+        },
+        {
+            "name": "Ogone",
+            "contents": "pf-ogone"
+        },
+        {
+            "name": "PagSeguro",
+            "contents": "pf-pagseguro"
+        },
+        {
+            "name": "PayBox",
+            "contents": "pf-paybox"
+        },
+        {
+            "name": "PayLife",
+            "contents": "pf-paylife"
+        },
+        {
+            "name": "PayMill",
+            "contents": "pf-paymill"
+        },
+        {
+            "name": "PayPal",
+            "contents": "pf-paypal"
+        },
+        {
+            "name": "PayPal Alt",
+            "contents": "pf-paypal-alt"
+        },
+        {
+            "name": "PaySafe Card",
+            "contents": "pf-paysafecard"
+        },
+        {
+            "name": "PayShop",
+            "contents": "pf-payshop"
+        },
+        {
+            "name": "PayU",
+            "contents": "pf-payu"
+        },
+        {
+            "name": "PostePay",
+            "contents": "pf-postepay"
+        },
+        {
+            "name": "Quick",
+            "contents": "pf-quick"
+        },
+        {
+            "name": "Rechnung",
+            "contents": "pf-rechnung"
+        },
+        {
+            "name": "Ripple",
+            "contents": "pf-ripple"
+        },
+        {
+            "name": "RUB",
+            "contents": "pf-rub"
+        },
+        {
+            "name": "Sage",
+            "contents": "pf-sage"
+        },
+        {
+            "name": "SEPA",
+            "contents": "pf-sepa"
+        },
+        {
+            "name": "SEPA Alt",
+            "contents": "pf-sepa-alt"
+        },
+        {
+            "name": "Six",
+            "contents": "pf-six"
+        },
+        {
+            "name": "Skrill",
+            "contents": "pf-skrill"
+        },
+        {
+            "name": "Sofort",
+            "contents": "pf-sofort"
+        },
+        {
+            "name": "Square",
+            "contents": "pf-square"
+        },
+        {
+            "name": "Stripe",
+            "contents": "pf-stripe"
+        },
+        {
+            "name": "TRUSTe",
+            "contents": "pf-truste"
+        },
+        {
+            "name": "TRY",
+            "contents": "pf-try"
+        },
+        {
+            "name": "UnionPay",
+            "contents": "pf-unionpay"
+        },
+        {
+            "name": "USD",
+            "contents": "pf-usd"
+        },
+        {
+            "name": "VeriSign",
+            "contents": "pf-verisign"
+        },
+        {
+            "name": "Verified by Visa",
+            "contents": "pf-verified-by-visa"
+        },
+        {
+            "name": "Visa",
+            "contents": "pf-visa"
+        },
+        {
+            "name": "Visa Electron",
+            "contents": "pf-visa-electron"
+        },
+        {
+            "name": "Western Union",
+            "contents": "pf-western-union"
+        },
+        {
+            "name": "Western Union Alt",
+            "contents": "pf-western-union-alt"
+        },
+        {
+            "name": "WireCard",
+            "contents": "pf-wirecard"
+        }
+    ]
+}

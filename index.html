@@ -1,0 +1,642 @@
+﻿<!doctype html>
+<html lang="en">
+<head>
+    <!-- Title block allowing child pages to override -->
+    <title>Empty</title>
+    <link rel="shortcut icon" type="image/ico" href="/favicon.ico" />
+        
+    <!-- Styles -->
+    <!-- Include Font Awesome. -->
+    <link href="assets/css/font-awesome.min.css" rel="stylesheet" type="text/css" />
+    <!-- Include Editor style. -->
+    <link href="assets/css/froala_editor.min.css" rel="stylesheet" type="text/css" />
+    <link href="assets/css/froala_style.min.css" rel="stylesheet" type="text/css" />
+    <link href="assets/css/paymentfont.min.css" rel="stylesheet" type="text/css" />
+
+    <style type="text/css">
+    .froala-editor .fr-dropdown .fr-trigger.active+.fr-dropdown-menu {
+        height: 200px;
+        overflow-y: scroll;
+    }
+    #edit {
+        margin-top: 20em;
+    }
+    </style>
+
+</head>
+<body>
+        <div id="wrapper">
+            <!-- Include -->
+            <!-- Content block, child page inject content -->
+             
+    <div id="edit">I am standard editable text. Thanks, Froala!</div>
+
+        </div>
+
+        <!-- Include jQuery. -->
+        <script src="http://code.jquery.com/jquery-1.11.0.js"></script>
+
+        <!-- Include JS files. -->
+        <script src="assets/scripts/froala_editor.min.js"></script>
+
+        <!-- Include IE8 JS. -->
+        <!--[if lt IE 9]>
+            <script src="scripts/js/froala_editor_ie8.min.js"></script>
+        <![endif]-->
+
+<script>
+    $(function() {
+        $('div#edit').editable({
+            inlineMode: true,
+            countCharacters: false,
+            alwaysVisible: true,
+            initOnClick: true,
+            buttons: ['bold', 'italic', 'underline', 'strikeThrough', 'fontFamily', 'fontSize', 'color', 'sep', 'formatBlock', 'blockStyle', 'align', 'insertOrderedList', 'insertUnorderedList', 'outdent', 'indent', 'selectAll', 'sep', 'createLink', 'insertImage', 'insertVideo', 'undo', 'removeFormat', 'redo', 'html', 'font_awesome_dropdown'],
+                customDropdowns: {
+                    font_awesome_dropdown: {
+                        title: 'PaymentFonts',
+                        icon: {
+                            type: 'font',
+                            value: 'fa fa-money'
+                        },
+                        options: {
+                            
+                            '<span class="pf pf-amazon"></span> Amazon': function () {
+                                this.insertHTML('<span class="pf pf-amazon"></span>');
+                                this.sync();
+                                this.saveUndoStep();
+                            },
+                            
+                            '<span class="pf pf-american-express"></span> American Express': function () {
+                                this.insertHTML('<span class="pf pf-american-express"></span>');
+                                this.sync();
+                                this.saveUndoStep();
+                            },
+                            
+                            '<span class="pf pf-american-express-alt"></span> American Express Alt': function () {
+                                this.insertHTML('<span class="pf pf-american-express-alt"></span>');
+                                this.sync();
+                                this.saveUndoStep();
+                            },
+                            
+                            '<span class="pf pf-apple-pay"></span> Apple Pay': function () {
+                                this.insertHTML('<span class="pf pf-apple-pay"></span>');
+                                this.sync();
+                                this.saveUndoStep();
+                            },
+                            
+                            '<span class="pf pf-atm"></span> ATM': function () {
+                                this.insertHTML('<span class="pf pf-atm"></span>');
+                                this.sync();
+                                this.saveUndoStep();
+                            },
+                            
+                            '<span class="pf pf-bancontact-mister-cash"></span> Bancontact Mister Cash': function () {
+                                this.insertHTML('<span class="pf pf-bancontact-mister-cash"></span>');
+                                this.sync();
+                                this.saveUndoStep();
+                            },
+                            
+                            '<span class="pf pf-bank-transfer"></span> Bank Transfer': function () {
+                                this.insertHTML('<span class="pf pf-bank-transfer"></span>');
+                                this.sync();
+                                this.saveUndoStep();
+                            },
+                            
+                            '<span class="pf pf-bankomat"></span> Bankomat': function () {
+                                this.insertHTML('<span class="pf pf-bankomat"></span>');
+                                this.sync();
+                                this.saveUndoStep();
+                            },
+                            
+                            '<span class="pf pf-bitcoin"></span> Bitcoin': function () {
+                                this.insertHTML('<span class="pf pf-bitcoin"></span>');
+                                this.sync();
+                                this.saveUndoStep();
+                            },
+                            
+                            '<span class="pf pf-bitcoin-sign"></span> Bitcoin Sign': function () {
+                                this.insertHTML('<span class="pf pf-bitcoin-sign"></span>');
+                                this.sync();
+                                this.saveUndoStep();
+                            },
+                            
+                            '<span class="pf pf-braintree"></span> Braintree': function () {
+                                this.insertHTML('<span class="pf pf-braintree"></span>');
+                                this.sync();
+                                this.saveUndoStep();
+                            },
+                            
+                            '<span class="pf pf-btc"></span> BTC': function () {
+                                this.insertHTML('<span class="pf pf-btc"></span>');
+                                this.sync();
+                                this.saveUndoStep();
+                            },
+                            
+                            '<span class="pf pf-card"></span> Card': function () {
+                                this.insertHTML('<span class="pf pf-card"></span>');
+                                this.sync();
+                                this.saveUndoStep();
+                            },
+                            
+                            '<span class="pf pf-carta-si"></span> Carta Si': function () {
+                                this.insertHTML('<span class="pf pf-carta-si"></span>');
+                                this.sync();
+                                this.saveUndoStep();
+                            },
+                            
+                            '<span class="pf pf-cash"></span> Cash': function () {
+                                this.insertHTML('<span class="pf pf-cash"></span>');
+                                this.sync();
+                                this.saveUndoStep();
+                            },
+                            
+                            '<span class="pf pf-cash-on-delivery"></span> Cash On Delivery': function () {
+                                this.insertHTML('<span class="pf pf-cash-on-delivery"></span>');
+                                this.sync();
+                                this.saveUndoStep();
+                            },
+                            
+                            '<span class="pf pf-cash-on-pickup"></span> Cash On Pickup': function () {
+                                this.insertHTML('<span class="pf pf-cash-on-pickup"></span>');
+                                this.sync();
+                                this.saveUndoStep();
+                            },
+                            
+                            '<span class="pf pf-cb"></span> CB': function () {
+                                this.insertHTML('<span class="pf pf-cb"></span>');
+                                this.sync();
+                                this.saveUndoStep();
+                            },
+                            
+                            '<span class="pf pf-cirrus"></span> Cirrus': function () {
+                                this.insertHTML('<span class="pf pf-cirrus"></span>');
+                                this.sync();
+                                this.saveUndoStep();
+                            },
+                            
+                            '<span class="pf pf-cirrus-alt"></span> Cirrus Alt': function () {
+                                this.insertHTML('<span class="pf pf-cirrus-alt"></span>');
+                                this.sync();
+                                this.saveUndoStep();
+                            },
+                            
+                            '<span class="pf pf-clickandbuy"></span> ClickAndBuy': function () {
+                                this.insertHTML('<span class="pf pf-clickandbuy"></span>');
+                                this.sync();
+                                this.saveUndoStep();
+                            },
+                            
+                            '<span class="pf pf-credit-card"></span> Credit Card': function () {
+                                this.insertHTML('<span class="pf pf-credit-card"></span>');
+                                this.sync();
+                                this.saveUndoStep();
+                            },
+                            
+                            '<span class="pf pf-dankort"></span> Dankort': function () {
+                                this.insertHTML('<span class="pf pf-dankort"></span>');
+                                this.sync();
+                                this.saveUndoStep();
+                            },
+                            
+                            '<span class="pf pf-diners"></span> Diners Club': function () {
+                                this.insertHTML('<span class="pf pf-diners"></span>');
+                                this.sync();
+                                this.saveUndoStep();
+                            },
+                            
+                            '<span class="pf pf-discover"></span> Discover': function () {
+                                this.insertHTML('<span class="pf pf-discover"></span>');
+                                this.sync();
+                                this.saveUndoStep();
+                            },
+                            
+                            '<span class="pf pf-ec"></span> EC': function () {
+                                this.insertHTML('<span class="pf pf-ec"></span>');
+                                this.sync();
+                                this.saveUndoStep();
+                            },
+                            
+                            '<span class="pf pf-elo"></span> ELO': function () {
+                                this.insertHTML('<span class="pf pf-elo"></span>');
+                                this.sync();
+                                this.saveUndoStep();
+                            },
+                            
+                            '<span class="pf pf-elo-alt"></span> ELO Alt': function () {
+                                this.insertHTML('<span class="pf pf-elo-alt"></span>');
+                                this.sync();
+                                this.saveUndoStep();
+                            },
+                            
+                            '<span class="pf pf-eps"></span> EPS': function () {
+                                this.insertHTML('<span class="pf pf-eps"></span>');
+                                this.sync();
+                                this.saveUndoStep();
+                            },
+                            
+                            '<span class="pf pf-eur"></span> EUR': function () {
+                                this.insertHTML('<span class="pf pf-eur"></span>');
+                                this.sync();
+                                this.saveUndoStep();
+                            },
+                            
+                            '<span class="pf pf-facture"></span> Facture': function () {
+                                this.insertHTML('<span class="pf pf-facture"></span>');
+                                this.sync();
+                                this.saveUndoStep();
+                            },
+                            
+                            '<span class="pf pf-fattura"></span> Fattura': function () {
+                                this.insertHTML('<span class="pf pf-fattura"></span>');
+                                this.sync();
+                                this.saveUndoStep();
+                            },
+                            
+                            '<span class="pf pf-flattr"></span> Flattr': function () {
+                                this.insertHTML('<span class="pf pf-flattr"></span>');
+                                this.sync();
+                                this.saveUndoStep();
+                            },
+                            
+                            '<span class="pf pf-giropay"></span> GiroPay': function () {
+                                this.insertHTML('<span class="pf pf-giropay"></span>');
+                                this.sync();
+                                this.saveUndoStep();
+                            },
+                            
+                            '<span class="pf pf-google-wallet"></span> Google Wallet': function () {
+                                this.insertHTML('<span class="pf pf-google-wallet"></span>');
+                                this.sync();
+                                this.saveUndoStep();
+                            },
+                            
+                            '<span class="pf pf-google-wallet-alt"></span> Google Wallet Alt': function () {
+                                this.insertHTML('<span class="pf pf-google-wallet-alt"></span>');
+                                this.sync();
+                                this.saveUndoStep();
+                            },
+                            
+                            '<span class="pf pf-gpb"></span> GPB': function () {
+                                this.insertHTML('<span class="pf pf-gpb"></span>');
+                                this.sync();
+                                this.saveUndoStep();
+                            },
+                            
+                            '<span class="pf pf-gratipay"></span> GratiPay': function () {
+                                this.insertHTML('<span class="pf pf-gratipay"></span>');
+                                this.sync();
+                                this.saveUndoStep();
+                            },
+                            
+                            '<span class="pf pf-gratipay-sign"></span> GratiPay Alt': function () {
+                                this.insertHTML('<span class="pf pf-gratipay-sign"></span>');
+                                this.sync();
+                                this.saveUndoStep();
+                            },
+                            
+                            '<span class="pf pf-ideal"></span> Ideal': function () {
+                                this.insertHTML('<span class="pf pf-ideal"></span>');
+                                this.sync();
+                                this.saveUndoStep();
+                            },
+                            
+                            '<span class="pf pf-ils"></span> ILS': function () {
+                                this.insertHTML('<span class="pf pf-ils"></span>');
+                                this.sync();
+                                this.saveUndoStep();
+                            },
+                            
+                            '<span class="pf pf-inr"></span> INR': function () {
+                                this.insertHTML('<span class="pf pf-inr"></span>');
+                                this.sync();
+                                this.saveUndoStep();
+                            },
+                            
+                            '<span class="pf pf-interac"></span> Interac': function () {
+                                this.insertHTML('<span class="pf pf-interac"></span>');
+                                this.sync();
+                                this.saveUndoStep();
+                            },
+                            
+                            '<span class="pf pf-invoice"></span> Invoice': function () {
+                                this.insertHTML('<span class="pf pf-invoice"></span>');
+                                this.sync();
+                                this.saveUndoStep();
+                            },
+                            
+                            '<span class="pf pf-invoice-sign"></span> Invoice Sign': function () {
+                                this.insertHTML('<span class="pf pf-invoice-sign"></span>');
+                                this.sync();
+                                this.saveUndoStep();
+                            },
+                            
+                            '<span class="pf pf-invoice-sign-alt"></span> Invoice Sign Alt': function () {
+                                this.insertHTML('<span class="pf pf-invoice-sign-alt"></span>');
+                                this.sync();
+                                this.saveUndoStep();
+                            },
+                            
+                            '<span class="pf pf-invoice-sign-alt-o"></span> Invoice Sign Alt O': function () {
+                                this.insertHTML('<span class="pf pf-invoice-sign-alt-o"></span>');
+                                this.sync();
+                                this.saveUndoStep();
+                            },
+                            
+                            '<span class="pf pf-invoice-sign-o"></span> Invoice Sign O': function () {
+                                this.insertHTML('<span class="pf pf-invoice-sign-o"></span>');
+                                this.sync();
+                                this.saveUndoStep();
+                            },
+                            
+                            '<span class="pf pf-jcb"></span> JCB': function () {
+                                this.insertHTML('<span class="pf pf-jcb"></span>');
+                                this.sync();
+                                this.saveUndoStep();
+                            },
+                            
+                            '<span class="pf pf-jpy"></span> JPY': function () {
+                                this.insertHTML('<span class="pf pf-jpy"></span>');
+                                this.sync();
+                                this.saveUndoStep();
+                            },
+                            
+                            '<span class="pf pf-krw"></span> KRW': function () {
+                                this.insertHTML('<span class="pf pf-krw"></span>');
+                                this.sync();
+                                this.saveUndoStep();
+                            },
+                            
+                            '<span class="pf pf-maestro"></span> Maestro': function () {
+                                this.insertHTML('<span class="pf pf-maestro"></span>');
+                                this.sync();
+                                this.saveUndoStep();
+                            },
+                            
+                            '<span class="pf pf-maestro-alt"></span> Maestro Alt': function () {
+                                this.insertHTML('<span class="pf pf-maestro-alt"></span>');
+                                this.sync();
+                                this.saveUndoStep();
+                            },
+                            
+                            '<span class="pf pf-mastercard"></span> Mastercard': function () {
+                                this.insertHTML('<span class="pf pf-mastercard"></span>');
+                                this.sync();
+                                this.saveUndoStep();
+                            },
+                            
+                            '<span class="pf pf-mastercard-alt"></span> Mastercard Alt': function () {
+                                this.insertHTML('<span class="pf pf-mastercard-alt"></span>');
+                                this.sync();
+                                this.saveUndoStep();
+                            },
+                            
+                            '<span class="pf pf-mastercard-securecode"></span> Mastercard SecureCode': function () {
+                                this.insertHTML('<span class="pf pf-mastercard-securecode"></span>');
+                                this.sync();
+                                this.saveUndoStep();
+                            },
+                            
+                            '<span class="pf pf-mercado-pago"></span> MercadoPago': function () {
+                                this.insertHTML('<span class="pf pf-mercado-pago"></span>');
+                                this.sync();
+                                this.saveUndoStep();
+                            },
+                            
+                            '<span class="pf pf-mercado-pago-sign"></span> MercadoPago Alt': function () {
+                                this.insertHTML('<span class="pf pf-mercado-pago-sign"></span>');
+                                this.sync();
+                                this.saveUndoStep();
+                            },
+                            
+                            '<span class="pf pf-moip"></span> MOIP': function () {
+                                this.insertHTML('<span class="pf pf-moip"></span>');
+                                this.sync();
+                                this.saveUndoStep();
+                            },
+                            
+                            '<span class="pf pf-multibanco"></span> MultiBanco': function () {
+                                this.insertHTML('<span class="pf pf-multibanco"></span>');
+                                this.sync();
+                                this.saveUndoStep();
+                            },
+                            
+                            '<span class="pf pf-ogone"></span> Ogone': function () {
+                                this.insertHTML('<span class="pf pf-ogone"></span>');
+                                this.sync();
+                                this.saveUndoStep();
+                            },
+                            
+                            '<span class="pf pf-pagseguro"></span> PagSeguro': function () {
+                                this.insertHTML('<span class="pf pf-pagseguro"></span>');
+                                this.sync();
+                                this.saveUndoStep();
+                            },
+                            
+                            '<span class="pf pf-paybox"></span> PayBox': function () {
+                                this.insertHTML('<span class="pf pf-paybox"></span>');
+                                this.sync();
+                                this.saveUndoStep();
+                            },
+                            
+                            '<span class="pf pf-paylife"></span> PayLife': function () {
+                                this.insertHTML('<span class="pf pf-paylife"></span>');
+                                this.sync();
+                                this.saveUndoStep();
+                            },
+                            
+                            '<span class="pf pf-paymill"></span> PayMill': function () {
+                                this.insertHTML('<span class="pf pf-paymill"></span>');
+                                this.sync();
+                                this.saveUndoStep();
+                            },
+                            
+                            '<span class="pf pf-paypal"></span> PayPal': function () {
+                                this.insertHTML('<span class="pf pf-paypal"></span>');
+                                this.sync();
+                                this.saveUndoStep();
+                            },
+                            
+                            '<span class="pf pf-paypal-alt"></span> PayPal Alt': function () {
+                                this.insertHTML('<span class="pf pf-paypal-alt"></span>');
+                                this.sync();
+                                this.saveUndoStep();
+                            },
+                            
+                            '<span class="pf pf-paysafecard"></span> PaySafe Card': function () {
+                                this.insertHTML('<span class="pf pf-paysafecard"></span>');
+                                this.sync();
+                                this.saveUndoStep();
+                            },
+                            
+                            '<span class="pf pf-payshop"></span> PayShop': function () {
+                                this.insertHTML('<span class="pf pf-payshop"></span>');
+                                this.sync();
+                                this.saveUndoStep();
+                            },
+                            
+                            '<span class="pf pf-payu"></span> PayU': function () {
+                                this.insertHTML('<span class="pf pf-payu"></span>');
+                                this.sync();
+                                this.saveUndoStep();
+                            },
+                            
+                            '<span class="pf pf-postepay"></span> PostePay': function () {
+                                this.insertHTML('<span class="pf pf-postepay"></span>');
+                                this.sync();
+                                this.saveUndoStep();
+                            },
+                            
+                            '<span class="pf pf-quick"></span> Quick': function () {
+                                this.insertHTML('<span class="pf pf-quick"></span>');
+                                this.sync();
+                                this.saveUndoStep();
+                            },
+                            
+                            '<span class="pf pf-rechnung"></span> Rechnung': function () {
+                                this.insertHTML('<span class="pf pf-rechnung"></span>');
+                                this.sync();
+                                this.saveUndoStep();
+                            },
+                            
+                            '<span class="pf pf-ripple"></span> Ripple': function () {
+                                this.insertHTML('<span class="pf pf-ripple"></span>');
+                                this.sync();
+                                this.saveUndoStep();
+                            },
+                            
+                            '<span class="pf pf-rub"></span> RUB': function () {
+                                this.insertHTML('<span class="pf pf-rub"></span>');
+                                this.sync();
+                                this.saveUndoStep();
+                            },
+                            
+                            '<span class="pf pf-sage"></span> Sage': function () {
+                                this.insertHTML('<span class="pf pf-sage"></span>');
+                                this.sync();
+                                this.saveUndoStep();
+                            },
+                            
+                            '<span class="pf pf-sepa"></span> SEPA': function () {
+                                this.insertHTML('<span class="pf pf-sepa"></span>');
+                                this.sync();
+                                this.saveUndoStep();
+                            },
+                            
+                            '<span class="pf pf-sepa-alt"></span> SEPA Alt': function () {
+                                this.insertHTML('<span class="pf pf-sepa-alt"></span>');
+                                this.sync();
+                                this.saveUndoStep();
+                            },
+                            
+                            '<span class="pf pf-six"></span> Six': function () {
+                                this.insertHTML('<span class="pf pf-six"></span>');
+                                this.sync();
+                                this.saveUndoStep();
+                            },
+                            
+                            '<span class="pf pf-skrill"></span> Skrill': function () {
+                                this.insertHTML('<span class="pf pf-skrill"></span>');
+                                this.sync();
+                                this.saveUndoStep();
+                            },
+                            
+                            '<span class="pf pf-sofort"></span> Sofort': function () {
+                                this.insertHTML('<span class="pf pf-sofort"></span>');
+                                this.sync();
+                                this.saveUndoStep();
+                            },
+                            
+                            '<span class="pf pf-square"></span> Square': function () {
+                                this.insertHTML('<span class="pf pf-square"></span>');
+                                this.sync();
+                                this.saveUndoStep();
+                            },
+                            
+                            '<span class="pf pf-stripe"></span> Stripe': function () {
+                                this.insertHTML('<span class="pf pf-stripe"></span>');
+                                this.sync();
+                                this.saveUndoStep();
+                            },
+                            
+                            '<span class="pf pf-truste"></span> TRUSTe': function () {
+                                this.insertHTML('<span class="pf pf-truste"></span>');
+                                this.sync();
+                                this.saveUndoStep();
+                            },
+                            
+                            '<span class="pf pf-try"></span> TRY': function () {
+                                this.insertHTML('<span class="pf pf-try"></span>');
+                                this.sync();
+                                this.saveUndoStep();
+                            },
+                            
+                            '<span class="pf pf-unionpay"></span> UnionPay': function () {
+                                this.insertHTML('<span class="pf pf-unionpay"></span>');
+                                this.sync();
+                                this.saveUndoStep();
+                            },
+                            
+                            '<span class="pf pf-usd"></span> USD': function () {
+                                this.insertHTML('<span class="pf pf-usd"></span>');
+                                this.sync();
+                                this.saveUndoStep();
+                            },
+                            
+                            '<span class="pf pf-verisign"></span> VeriSign': function () {
+                                this.insertHTML('<span class="pf pf-verisign"></span>');
+                                this.sync();
+                                this.saveUndoStep();
+                            },
+                            
+                            '<span class="pf pf-verified-by-visa"></span> Verified by Visa': function () {
+                                this.insertHTML('<span class="pf pf-verified-by-visa"></span>');
+                                this.sync();
+                                this.saveUndoStep();
+                            },
+                            
+                            '<span class="pf pf-visa"></span> Visa': function () {
+                                this.insertHTML('<span class="pf pf-visa"></span>');
+                                this.sync();
+                                this.saveUndoStep();
+                            },
+                            
+                            '<span class="pf pf-visa-electron"></span> Visa Electron': function () {
+                                this.insertHTML('<span class="pf pf-visa-electron"></span>');
+                                this.sync();
+                                this.saveUndoStep();
+                            },
+                            
+                            '<span class="pf pf-western-union"></span> Western Union': function () {
+                                this.insertHTML('<span class="pf pf-western-union"></span>');
+                                this.sync();
+                                this.saveUndoStep();
+                            },
+                            
+                            '<span class="pf pf-western-union-alt"></span> Western Union Alt': function () {
+                                this.insertHTML('<span class="pf pf-western-union-alt"></span>');
+                                this.sync();
+                                this.saveUndoStep();
+                            },
+                            
+                            '<span class="pf pf-wirecard"></span> WireCard': function () {
+                                this.insertHTML('<span class="pf pf-wirecard"></span>');
+                                this.sync();
+                                this.saveUndoStep();
+                            },
+                            
+                        },
+                        refresh: function () {
+                            // This method is called when the state of the button might have been changed.
+                        },
+                        refreshOnShow: function () {
+                            // This method is called when the dropdown context menu is shown.
+                        }
+                    }
+                }
+        })
+    });
+</script>
+
+</body>
+</html>
